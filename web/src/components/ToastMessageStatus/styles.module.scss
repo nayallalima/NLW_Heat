@@ -1,0 +1,21 @@
+.toastMessageStatusWrapper {
+  position: absolute;
+  right: -10%;
+  background: #18c451;
+  padding: 20px 65px;
+
+  animation-duration: 3s;
+  animation-name: slideDown;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0%,
+  100% {
+    top: -60px;
+  }
+  20%,
+  80% {
+    top: 16px;
+  }
+}

@@ -1,6 +1,7 @@
 import { useContext, useState, FormEvent } from 'react';
 import { VscGithubInverted, VscSignOut } from 'react-icons/vsc';
 import { AuthContext } from '../../contexts/auth';
+import { ToastMessageStatus } from "../ToastMessageStatus";
 import { api } from '../../services/api';
 import styles from './styles.module.scss';
 
@@ -8,6 +9,7 @@ import styles from './styles.module.scss';
 export function SendMessageForm(){
   const { user, signOut } = useContext(AuthContext);  
   const  [message, setMessage]  = useState(' ');  
+  const [messageSent, setMessageSent] = useState(false);
 
   async function handleSendMessage(event: FormEvent){
     event.preventDefault();
@@ -15,12 +17,20 @@ export function SendMessageForm(){
     if (!message.trim()){
       return;
     }
-    await api.post('messages', {message})
+    const res = await api.post('messages', {message});
+
+    if (res.status === 200) {
+      setMessageSent(true);
+      setTimeout(() => {
+        setMessageSent(false);
+      }, 2000);
+    }
 
     setMessage(' ');
   }
 
   return(
+    <>
     <div className={styles.sendMessageWrapper}>  
       <button onClick={signOut} className={styles.signOutButton}>  <VscSignOut size="32"/>
       </button>            
@@ -47,5 +57,7 @@ export function SendMessageForm(){
          <button type="submit">Enviar mensagem</button>
       </form>
     </div>    
-  )
+    {messageSent && <ToastMessageStatus/>}
+    </>
+  );
 }
