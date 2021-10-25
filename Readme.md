@@ -34,21 +34,16 @@ Você pode visualizar o layout do projeto através [desse link](<https://www.fig
 ## ▶️ Executando a aplicação
 
 - Clone o repositório para a sua máquina
-
-  git clone https://github.com/nayallalima/NLW_Heat.git
-
+  `git clone https://github.com/nayallalima/NLW_Heat.git`
 - Instale as dependências com `yarn install`
-
 - Inicie o servidor com o comando `yarn dev`
 
 O app estará disponível no seu browser pelo endereço [`localhost:3000`](http://localhost:3000) do seu navegador.
-
 ## 🔒 Licença
 
 <a> <img alt="License" src="https://img.shields.io/badge/license-MIT-blueviolet"> </a>
 
 ---
-
 <p align="center">
   Feito com 💜️ por <a href="https://github.com/nayallalima">Nayalla Lima </a>
 </p>
