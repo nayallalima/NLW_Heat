@@ -2,7 +2,8 @@
 
 <p align="center">  
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-  <a href="#-demonstração">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-demonstração-da-aplicação">Demonstração da aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-demonstração-do-crachá">Demonstração do crachá</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias-utilizadas">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-executando-a-aplicação">Executando a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
@@ -15,8 +16,11 @@ O projeto foi desenvolvido durante a NextLevelWeek Heat da <a href="http://https
 
 Este projeto permite que usuários se conectem para o envio e visualização de mensagens em tempo real.
 
-##  👀 Demonstração
+##  👀 Demonstração da aplicação
 ![](doWhile.gif)
+
+##  👀 Demonstração do crachá
+![](badge.gif)
 
 ## 💈 Tecnologias utilizadas
 
