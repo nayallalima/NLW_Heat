@@ -1,5 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 html, body {
-  height: 100%;
+  --grey:  hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -7,18 +16,119 @@ body {
   place-items: center;   
 }
 
-.main{
-  background: url(img/background.svg) no-repeat  center ;
+main{
+  background: url(img/background.svg) ;
+  width: 375px;
+  height: 812px;
 }
 
-.content{
-  
+.container{
+  max-width: 262px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
 }
+
+.avatar{
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative; 
+}
+
+.avatar span{
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  transform: translate(-10%, -10%);
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-10%, -10%) rotate(0deg) scale(0.8);
+  }
+  100% {
+    transform: translate(-10%, -10%) rotate(-360deg) scale(0.8);
+  }
+}
+
+.avatar > img{
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%) ;
+}
+
 h1 {
   font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 a {
-  color: rgb(245, 2, 245);
+  color: var(--grey);
   text-decoration: none;
+  margin-top: .25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;  
 }
+
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 4rem;  
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  justify-content: center;
+  border-radius: 50%;
+  transition-delay: 1s;
+}
+ul:hover{
+  filter: brightness(0.8);
+}
+
+.youtube {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+}
+
+.youtube:hover {
+  background-color: #c4302b;
+}
+
+.instagram {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #5851db 0%, #833ab4 25%, #fa1bd5 50%, #e1306c 75%, #fd1d1d 100%);  
+}
+
+.facebook {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.twitter {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+}
+
+.twitter:hover {
+  background-color: #00acee;
+}
+

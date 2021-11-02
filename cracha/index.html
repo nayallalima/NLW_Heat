@@ -4,50 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Nayalla Lima - DoWhile 2021</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />   
   </head>
 
   <body>
     <main>
-      <div class="content">
+      <div class="container">
         <div class="avatar">
-          <img src="img/build.svg" alt="Selo Rocketseat" />
-          <img
-            src="https://lorempixel.com/185/185/people"
-            alt="Foto do usuario"
+          <span><img src="img/build.svg" alt="Selo Rocketseat" /></span>          
+          <img id='userImage'
+            src="https://avatars.githubusercontent.com/u/65499893?v=4"
+            alt="Foto de Nayalla Lima"
           />
         </div>
 
-        <h1>Nayalla Lima</h1>
-        <a href="https://instagram.com/nayallam_lima" target="_blank"
-          >@nayallam_lima</a        >
+        <h1 id='userName'>Nayalla Lima</h1>
+        <a id='userLink' href="https://instagram.com/nayallam_lima" target="_blank"
+          ><img src="img/github.svg" alt="icone do github">
+          <span id='userLogin'>nayalla_lima</span></a>
 
-        <p>An instructor focused on helping people start programming for web</p>
+        <p id='userBio'>An instructor focused on helping people start programming for web</p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com/nayallalima"
-              ><img src="img/youtube.svg" alt="ícone do youtube" target="_blank" />
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com" target="_blank"
+              ><img src="img/youtube.svg" alt="ícone do youtube"  />
             </a>
           </li>
-          <li>
-            <a href="https://instagram.com/nayallam_lima"
-              ><img src="img/instagram.svg" alt="ícone do instagram" target="_blank"  />
+          <li  class="instagram">
+            <a href="https://instagram.com/nayallam_lima" target="_blank"
+              ><img src="img/instagram.svg" alt="ícone do instagram" />
             </a>
           </li>
-          <li>
-            <a href="https://facebook.com/nayalla.lima.3"
-              ><img src="img/facebook.svg" alt="ícone do facebook" target="_blank" />
+          <li  class="facebook">
+            <a href="https://facebook.com/nayalla.lima.3" target="_blank" 
+              ><img src="img/facebook.svg" alt="ícone do facebook" />
             </a>
           </li>         
-          <li>
-            <a href="https://twitter.com">
-              <img src="img/twitter.svg" alt="ícone do twitter" target="_blank" />
+          <li  class="twitter">
+            <a href="https://twitter.com" target="_blank" >
+              <img src="img/twitter.svg" alt="ícone do twitter" />
             </a>
             </li>
         </ul>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
